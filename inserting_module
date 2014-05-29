@@ -1,0 +1,23 @@
+Script started on Wed 20 Mar 2013 11:22:45 PM MDT
+]0;carson@glyph:/home/carson/457/457-a2/bytepatch[?1034h[root@glyph bytepatch]# modprobe bytepatch pid=5657 addr=0xbfff8448 val=2000[2P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@0x[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31Pps aux | grep dummy[3Pcat /proc/1/mapsps aux | grep dummy
+carson    5672  0.0  0.0   4132   732 pts/2    S+   23:21   0:00 script running_dummy
+carson    5674  0.0  0.0   4136   340 pts/2    S+   23:21   0:00 script running_dummy
+carson    5704  0.1  0.0   1864   356 pts/3    S+   23:22   0:00 ./dummy
+root      5706  2.0  0.0   4352   712 pts/5    S+   23:22   0:00 grep dummy
+]0;carson@glyph:/home/carson/457/457-a2/bytepatch[root@glyph bytepatch]# ps aux | grep dummymodprobe bytepatch pid=5657 addr=0xbfff8448 val=2000[C[C[C[C[C[C[C[C[C[1@-[1@r[1@ [C[C[C[C[C[C[C[C[C[K
+]0;carson@glyph:/home/carson/457/457-a2/bytepatch[root@glyph bytepatch]# modprobe -r bytepatch[2Pps aux | grep dummymodprobe bytepatch pid=5657 addr=0xbfff8448 val=2000[1P[1P[C[1@0[1@4[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@d[1@d[C[4P val=20006 val=20007 val=20000 val=20008 val=2000
+]0;carson@glyph:/home/carson/457/457-a2/bytepatch[root@glyph bytepatch]# dmesg | tail
+0b77fe000-0b77ff000 rw-p
+0bfc45000-0bfc5b000 rw-p
+bytepatch: `bfff8448' invalid for parameter `addr'
+Loading bytepatch..
+Target PID: 5657
+Target addr: bfff8448
+Goodbye cruel world. 
+Loading bytepatch..
+Target PID: 5704
+Target addr: bfdd6708
+]0;carson@glyph:/home/carson/457/457-a2/bytepatch[root@glyph bytepatch]# modprobe -r bytepatch.c [K[K[K
+]0;carson@glyph:/home/carson/457/457-a2/bytepatch[root@glyph bytepatch]# exit
+
+Script done on Wed 20 Mar 2013 11:24:33 PM MDT
