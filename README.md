@@ -1,4 +1,4 @@
 bytepatch
 =========
 
-Manipulate memory of userspace programs from within the kernel.
+Manipulate memory of userspace programs
